@@ -1,0 +1,49 @@
+import java.util.*;
+public class main{
+public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+//Taking inputs of 5 subjects
+System.out.print("Enter the marks obtained in English:");
+float a= sc.nextInt();
+
+System.out.print("Enter the marks obtained in Mathematics:");
+float b= sc.nextInt();
+System.out.print("Enter the marks obtained in Science:");
+float c= sc.nextInt();
+System.out.print("Enter the marks obtained in Advanced Mathematics:");
+float d= sc.nextInt();
+System.out.print("Enter the marks obtained in Social Science:");
+float e= sc.nextInt();
+
+//Calculate the total marks
+float sum;
+sum=a+b+c+d+e;
+System.out.println("Total marks obtainedin the exam is:"+sum);
+
+//Calculation of average percentage
+float avgpercentage;
+avgpercentage=sum/5;
+System.out.println("Average percentage obtained is:"+avgpercentage);
+
+//Grades based in the percentage obtained
+float grade=avgpercentage;
+if(grade>=90 && grade<=100){
+System.out.println("Grade obtained is O");
+}else if(grade>=80 && grade<=89){
+System.out.println("Grade obtained is A+");
+}else if(grade>=70 && grade<=79){
+System.out.println("Grade obtained is A");
+}else if(grade>=60 && grade<=69){
+System.out.println("Grade obtained is B+");
+}else if(grade>=50 && grade<=59){
+System.out.println("Grade obtained is B");
+}else if(grade>=40 && grade<=49){
+System.out.println("Grade obtained is C+");
+}else if(grade>=30 && grade<=39){
+System.out.println("Grade obtained is C");
+}else{
+System.out.println("Grade Fail");
+}
+}
+}
+
